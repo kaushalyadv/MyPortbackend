@@ -11,7 +11,7 @@ const port = process.env.NODE_ENV || 5000
 
 app.use(cors(
   {
-      origin: ["http://localhost:5000"]
+      origin: ["http://localhost:5000", "https://mern-stack-port.onrender.com"],
   }
 ))
 
