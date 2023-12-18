@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 // var fetchuser = require('../middleware/fetchuser');
 
-const JWT_SECRET = "kaushalIsGreat"
+const JWT_SECRET = process.env.JWT_SECRET || "kaushalIsGreat"; 
 
 
 // ROUTE : Send a Message using: POST "/api/auth/sendMessage" . No login required
